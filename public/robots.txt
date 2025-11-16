@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bogor-nexus.vercel.app/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Disallow admin pages
+Disallow: /admin
+Disallow: /login
+Disallow: /api
+
+# Allow all main pages
+Allow: /dashboard
+Allow: /analytics
+Allow: /neural-network
+Allow: /system
