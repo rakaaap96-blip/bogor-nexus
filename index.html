@@ -1,37 +1,63 @@
 <!doctype html>
-<html lang="id">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- Comprehensive Favicon Setup -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/images/Vector.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary Meta Tags -->
-    <title>Bogor Nexus - Cyber City Intelligence Dashboard</title>
-    <meta name="title" content="Bogor Nexus - Cyber City Intelligence Dashboard">
-    <meta name="description" content="Real-time monitoring and analytics dashboard for Bogor City infrastructure. Track traffic, population, environment, and utilities with AI-powered insights.">
-    <meta name="keywords" content="bogor, dashboard, analytics, smart city, traffic monitoring, population data, environmental data, AI analytics">
+    <title>Bogor Nexus - Cyber City Intelligence Dashboard | Real-time Urban Analytics</title>
+    <meta name="title" content="Bogor Nexus - Cyber City Intelligence Dashboard | Real-time Urban Analytics">
+    <meta name="description" content="Advanced real-time monitoring and predictive analytics dashboard for Bogor City infrastructure. Track traffic patterns, population dynamics, environmental metrics, and utilities with AI-powered insights for smarter urban management.">
+    <meta name="keywords" content="bogor, smart city dashboard, urban analytics, real-time monitoring, traffic analytics, population data, environmental monitoring, AI urban insights, city infrastructure, Indonesia smart city">
     <meta name="author" content="Bogor Nexus">
     <meta name="robots" content="index, follow">
-    
+    <meta name="googlebot" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bogor Nexus">
     <meta property="og:url" content="https://bogor-nexus.vercel.app/">
     <meta property="og:title" content="Bogor Nexus - Cyber City Intelligence Dashboard">
-    <meta property="og:description" content="Real-time monitoring and analytics dashboard for Bogor City infrastructure.">
-    <meta property="og:image" content="https://bogor-nexus.vercel.app/og-image.png">
+    <meta property="og:description" content="Real-time monitoring and analytics dashboard for Bogor City infrastructure. Track traffic, population, environment, and utilities with AI-powered insights.">
+    <meta property="og:image" content="https://bogor-nexus.vercel.app/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bogor Nexus Dashboard showing real-time city metrics and analytics">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://bogor-nexus.vercel.app/">
     <meta property="twitter:title" content="Bogor Nexus - Cyber City Intelligence Dashboard">
     <meta property="twitter:description" content="Real-time monitoring and analytics dashboard for Bogor City infrastructure.">
-    <meta property="twitter:image" content="https://bogor-nexus.vercel.app/og-image.png">
+    <meta property="twitter:image" content="https://bogor-nexus.vercel.app/images/og-image.png">
+    <meta property="twitter:creator" content="@bogor_nexus">
     
     <!-- Additional SEO -->
     <meta name="theme-color" content="#00f0ff">
     <meta name="msapplication-TileColor" content="#00f0ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Bogor Nexus">
     <link rel="canonical" href="https://bogor-nexus.vercel.app/">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/main.tsx" as="script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Additional Favicon declarations for maximum compatibility -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/images/Vector.png" color="#00f0ff">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -39,25 +65,86 @@
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "Bogor Nexus",
-      "description": "Real-time monitoring and analytics dashboard for Bogor City infrastructure",
+      "description": "Real-time monitoring and analytics dashboard for Bogor City infrastructure with AI-powered insights for urban management",
       "url": "https://bogor-nexus.vercel.app/",
       "applicationCategory": "DataVisualization",
       "operatingSystem": "Web Browser",
       "permissions": "browser",
       "author": {
         "@type": "Organization",
-        "name": "Bogor Nexus"
+        "name": "Bogor Nexus",
+        "url": "https://bogor-nexus.vercel.app/",
+        "logo": "https://bogor-nexus.vercel.app/images/Vector.png"
       },
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
-      }
+      },
+      "screenshot": {
+        "@type": "ImageObject",
+        "url": "https://bogor-nexus.vercel.app/images/og-image.png",
+        "width": "1200",
+        "height": "630"
+      },
+      "featureList": [
+        "Real-time traffic monitoring",
+        "Population analytics",
+        "Environmental data tracking",
+        "Utility infrastructure monitoring",
+        "AI-powered predictive insights"
+      ]
+    }
+    </script>
+    
+    <!-- Additional Schema for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Bogor Nexus",
+      "url": "https://bogor-nexus.vercel.app/",
+      "logo": "https://bogor-nexus.vercel.app/images/Vector.png",
+      "description": "Provider of intelligent urban analytics and monitoring solutions for Bogor City",
+      "sameAs": []
     }
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <noscript>
+      <div style="text-align: center; padding: 2rem; font-family: Arial, sans-serif;">
+        <h1>Bogor Nexus - Cyber City Intelligence Dashboard</h1>
+        <p>This application requires JavaScript to function properly. Please enable JavaScript in your browser to continue.</p>
+        <p>Alternatively, you can visit our <a href="/static-version">static version</a> of the dashboard.</p>
+      </div>
+    </noscript>
+    
+    <div id="root" role="main" aria-label="Bogor Nexus Dashboard">
+      <!-- React application will be mounted here -->
+    </div>
+    
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Performance monitoring snippet -->
+    <script>
+      window.addEventListener('load', function() {
+        if ('performance' in window) {
+          setTimeout(function() {
+            const perfData = window.performance.timing;
+            const loadTime = perfData.loadEventEnd - perfData.navigationStart;
+            console.log('Bogor Nexus - Page load time:', loadTime, 'ms');
+            
+            // Send to analytics
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'timing_complete', {
+                'name': 'load',
+                'value': loadTime,
+                'event_category': 'Load Time'
+              });
+            }
+          }, 0);
+        }
+      });
+    </script>
   </body>
 </html>
